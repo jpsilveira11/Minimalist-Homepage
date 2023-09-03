@@ -1,0 +1,11 @@
+{"manifest_version":1,
+"name": "Minimalist Homepage",
+"version": "1.0.0",
+"description":"O group of minimalist customized homepage for your chrome based web browser."
+/*
+    "action":{
+        "default_icon":"path/to/icon.png",
+        "default_popup":popup.html
+    }
+*/
+}

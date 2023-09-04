@@ -10,28 +10,63 @@
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <div class="watch">
-            <div>
-                <span id="hours">00</span>
-                <span class="label">h</span>
+        <form action="https://www.google.com/search" method="get">
+        <div class="search">
+            <div class="button">
+                <i class='bx bx-search'></i>
+                <i class='bx bxl-google'></i>
             </div>
-            <div>
-                <span id="minutes">00</span>
-                <span class="label">m</span>
+            <div class="input">
+                <input type="text" placeholder="Search" id="content" type="text" id="q" name="q">
             </div>
-            <div>
-                <span id="seconds">00</span>
-                <span class="label">s</span>
+            <span class="clear" onclick="document.getElementById('content').value=''">
+                <i class='bx bx-x'></i>
+            </span>
             </div>
-            <div id="twelve-hours-format">
-                <span id="am">AM</span>
-                <span id="pm">PM</span>
+        </form>
+            <!--<form action="https://www.google.com/search" method="get">-->
+    <!--
+                <input type="radio" id="google" name="search-engine" value="google" />
+                <label for="google"><i class='bx bxl-google'></i></label>
+                <input type="radio" id="bing" name="search-engine" value="bing" />
+                <label for="bing"></label><i class='bx bxl-bing'></i></label>
+                <input type="radio" id="yahoo" name="search-engine" value="yahoo" />
+                <label for="yahoo"></label><i class='bx bxl-yahoo' ></i></label>
+    -->
+    <!--            
+                <input type="text" name="q" placeholder="Search">
+                <div class="search-btn">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="cancel-btn">
+                    <i class='bx bx-x'></i>  
+                </div>
+                </div> -->
             </div>
-        </div>
-        <script type="text/javascript" src="assets/js/watch.js"></script>
-        <script type="text/javascript" src="assets/js/theme.js"></script>
+            <div class="watch">
+                <div>
+                    <span id="hours">00</span>
+                    <span class="label">h</span>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <span class="label">m</span>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <span class="label">s</span>
+                </div>
+                <div id="twelve-hours-format">
+                    <span id="am">AM</span>
+                    <span id="pm">PM</span>
+                </div>
+            </div>
+    <script type="text/javascript" src="assets/js/searchbar.js"></script>
+    <script type="text/javascript" src="assets/js/watch.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js"></script>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

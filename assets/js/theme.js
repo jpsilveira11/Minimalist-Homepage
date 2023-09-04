@@ -1,15 +1,15 @@
 const theme='light';
 
 const body=document.body;
-const items=body.querySelector('.watch div');
-var watchDivs=[];
+const items=body.querySelectorAll('.watch div');
 
 if (theme=='dark'){
-    body.style.color='#fff';    
+    body.style.color='#fff';
+    items.forEach(item=>item.style.backgroundColor='#000');    
 }
 else{
     body.style.color='#000';
-    items.style.backgroundColor='magenta';
+    items.forEach(item=>item.style.backgroundColor='#fff');
 
 }
 /*var darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");

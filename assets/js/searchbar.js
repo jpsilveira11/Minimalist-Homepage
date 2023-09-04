@@ -1,3 +1,7 @@
+var searchEngine=document.getElementById('searchbar');
+
+//searchEngine.setAttribute('action,'link.to.search');
+
 const button=document.querySelector('.button');
 const search=document.querySelector('.search');
 const firstIcon=document.querySelector('.button i:first-child');

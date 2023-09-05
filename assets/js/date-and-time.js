@@ -1,5 +1,6 @@
 const hideWatch=false;
 const hideDate=false;
+const dateFormat='mm/dd/yyyy';
 const timeFormat='12' 
 const date=document.getElementById('today');
 const hours=document.getElementById('hours');
@@ -23,7 +24,10 @@ const dayOfWeek=currentDate.toLocaleString(undefined,{weekday:'short'});
 const dayOfMonth=currentDate.getDate();
 const month=currentDate.toLocaleString(undefined,{month:'long'});
 const year=currentDate.getFullYear();
-date.textContent=(dayOfWeek+', '+month+' '+dayOfMonth+' '+year);
+if (dateFormat == 'mm/dd/yyyy') date.textContent=(dayOfWeek+', '+month+' '+dayOfMonth+' '+year);
+if (dateFormat == 'dd/mm/yyyy') date.textContent=(dayOfWeek+', '+dayOfMonth+' '+month+' '+year);
+if (dateFormat == 'yyyy/dd/mm') date.textContent=(dayOfWeek+', '+year+' '+dayOfMonth+' '+month);
+if (dateFormat == 'yyyy/mm/dd') date.textContent=(dayOfWeek+', '+year+' '+month+' '+dayOfMonth);
 
 
     if (timeFormat==24) {

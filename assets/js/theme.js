@@ -1,4 +1,4 @@
-const theme='light';
+const theme='dark';
 
 const body=document.body;
 const searchBar=document.querySelector('.search');
